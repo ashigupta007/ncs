@@ -217,25 +217,26 @@ html, body
 	margin-right: 30px;
 	text-decoration:none;
 }
-.aboutus, .our-clients
+.aboutus, .our-clients, .contact
 {
 	padding: 50px 100px 50px 100px;
 	text-align: center;
 	min-height: 100%;
 	width: 100%;
+	overflow:hidden;
 }
-.aboutus h1 font
+.aboutus h1 font, .contact h1 font
 {
 	color: rgba(11, 93, 88,0.95);
 }
-.aboutus h1, .our-clients h1
+.aboutus h1, .our-clients h1, .contact h1
 {
 	font-family: 'Montserrat', sans-serif;
 	color:#6E6E6E;
 	letter-spacing: 2px;
 	font-weight: bold
 }
-.aboutus hr
+.aboutus hr, .contact hr
 {
 	width: 40%;
 	height: 2px;
@@ -306,12 +307,12 @@ html, body
 	margin: auto;
 	width: 90%;
 	margin-top: 40px;
-	height: 70%;
+	height: 60vh;
 }
 .grid .grid-item-2
 {
 	padding:3px;
-	height: 150px;
+	height:33.33%;
 }
 .content
 {
@@ -325,7 +326,7 @@ html, body
 	background-size:cover;
 	background-position: center;
 	background-attachment: fixed;
-	font-size: 25px;
+	font-size: 22px;
 	font-weight: bold;
 	letter-spacing: 2px;
 	color: white;
@@ -333,12 +334,63 @@ html, body
 	background-blend-mode: multiply;
 	font-family: 'Poiret One', cursive;
 }
-
-
-
-
-
-
+.contact .row
+{
+	height: 100%;
+	text-align: left;
+}
+#map
+{
+    height: 60vh;
+}
+.flex-centered
+{
+	padding-top: 40px;
+}
+.contact .row .address
+{
+	height: 100%;
+	font-size: 16px;
+	line-height: 40px;
+	letter-spacing: 1.5px;
+	text-align: left;
+	padding-top: 50px;
+}
+.contact .row .address i
+{
+	font-size: 25px;
+	vertical-align: middle;
+	margin-right: 30px;
+}
+.contact .fa-map-marker
+{
+	color:#1874CD;	
+}
+.contact .fa-mobile-alt
+{
+	color:#2E8B57;
+}
+.contact .fa-clock
+{
+	color:#7171C6;
+}
+.contact .fa-envelope
+{
+	color: #EE9A00;
+}
+.contact .row .address p
+{
+	margin-bottom: 20px;
+}
+.footer
+{
+	padding: 30px 100px 30px 100px;
+	background-color:#2B2B2B;
+	color: white;
+	font-family: 'Poiret One', cursive;
+	font-size: 16px;
+	letter-spacing: 2px;
+}
 
 
 

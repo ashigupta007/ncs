@@ -39,9 +39,9 @@
                 <ul>
                     <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
                     <li><a href="#"><i class="far fa-id-card"></i> About Us</a></li>
-                    <li><a href="#"><i class="far fa-id-card"></i> Services</a></li>
+                    <li><a href="#"><i class="fas fa-briefcase"></i> Services</a></li>
                     <li><a href="#"><i class="far fa-envelope"></i> Contact</a></li>
-                    <li><a href="#"><i class="far fa-envelope"></i> Dashboard</a></li>
+                    <li><a href="#"><i class="far fa-chart-bar"></i> Dashboard</a></li>
 
                 </ul>
             </div>
@@ -59,11 +59,11 @@
                         Deals Computer
                     </div>
                     <div class="grid-item">
-                        <i class="fas fa-laptop"></i>
+                        <i class="fas fa-file-signature"></i>
                         AMC
                     </div>
                     <div class="grid-item">
-                        <i class="fas fa-globe-asia"></i>
+                        <i class="fas fa-video"></i>
                         CCTV
                     </div>
                 </div>
@@ -89,9 +89,7 @@
     <div class="aboutus">
         <h1><font>About</font> Us</h1>
         <hr>
-        
         <p class="cursive">Lorem Ipsum is simply dummy text of the printing.</p>
-
         <div class="row">
             <div class="col-sm-6 mockup">
                 <img src="images/mockup2.png">
@@ -99,10 +97,7 @@
             <div class="col-sm-6">
                 <font>L</font>orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                 <br>
-                
                <!--  <button class="btn_lg light">Know More</button> -->
-
-
             </div>
         </div>
     </div>
@@ -110,28 +105,76 @@
 
     <div class="our-clients">
         <div class="custom-container">
-        <h1><font>Our</font> Services</h1>
+	        <h1><font>Our</font> Services</h1>
+	        <hr>
+	        <p class="cursive">Lorem Ipsum is simply dummy text of the printing.</p>
+	        <div class="grid">
+	            <div class="col-sm-2 grid-item-2"><div class="content" >AMC</div></div>
+	            <div class="col-sm-2 grid-item-2"><div class="content" >mi</div></div>
+	            <div class="col-sm-8 grid-item-2"><div class="content" >Siemens</div></div>
+
+	            <div class="col-sm-4 grid-item-2"><div class="content" >Adobe</div></div>
+	            <div class="col-sm-4 grid-item-2"><div class="content" >BTC</div></div>
+	            <div class="col-sm-4 grid-item-2"><div class="content" >Microsoft</div></div>
+
+	            <div class="col-sm-8 grid-item-2"><div class="content" >Tak Technologies</div></div>
+	            <div class="col-sm-4 grid-item-2"><div class="content" >Etsy</div></div>
+	        </div>
+    	</div>
+	</div>
+
+	<div class="contact">
+		 <h1><font>Contact</font> Us</h1>
         <hr>
-        
-        <p class="cursive">Lorem Ipsum is simply dummy text of the printing.</p>
+        <div class="row">
+        	<div class="col-sm-6 flex-centered">
+        		<div id="map"></div>
+        	</div>
+        	<div class="col-sm-6 address">
+        		<p>
+        			<table>
+        			<td><i class="fas fa-map-marker"></i></td>
 
-        
-        <div class="grid">
-            <div class="col-sm-2 grid-item-2"><div class="content" >AMC</div></div>
-            <div class="col-sm-2 grid-item-2"><div class="content" >mi</div></div>
-            <div class="col-sm-8 grid-item-2"><div class="content" >Siemens</div></div>
+        			<td>M-20/21, 1st Floor, Fruit Garden, Shahid Bhagat Singh Marg, New Industrial Twp 5, New Industrial Town, Faridabad, Haryana 121001</td>
+        			</table>
+        		</p>
+        	
+				<p>
+        			<i class="fas fa-mobile-alt"></i> 092124 20432
+        		</p>
 
-            <div class="col-sm-4 grid-item-2"><div class="content" >Adobe</div></div>
-            <div class="col-sm-4 grid-item-2"><div class="content" >BTC</div></div>
-            <div class="col-sm-4 grid-item-2"><div class="content" >Microsoft</div></div>
-
-            <div class="col-sm-8 grid-item-2"><div class="content" >Tak Technologies</div></div>
-            <div class="col-sm-4 grid-item-2"><div class="content" >Etsy</div></div>
+        		<p>
+        			<i class="fas fa-envelope"></i> nationalcomputer@gmail.com
+        		</p>
+  				
+  				<p>      		
+          			<i class="far fa-clock"></i> Mon - Sat (10:00 AM - 6:30 PM)
+          		</p>
+        	</div>
         </div>
+	</div>
 
 
-    </div>
-
+	<div class="footer">
+		&copy; National Computer Solutions.
+	</div>
 
 </body>
+
+	
+
+	<script>
+      var map;
+      function initMap() {
+  		var uluru = {lat: 28.396698, lng: 77.306315};
+  		var map = new google.maps.Map(
+      	document.getElementById('map'), {zoom: 18, center: uluru});
+  		var marker = new google.maps.Marker({position: uluru, map: map});
+		}
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAyI9FnMPyTCKma3mB3B7SxShbi-nkl1TU&callback=initMap"
+    async defer></script>
+    
+
 </html>
