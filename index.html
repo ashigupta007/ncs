@@ -34,15 +34,26 @@
             <div class="header">
                 <img src="images/logo2.png"> NCS
             </div>
+			
+			 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-small"><i class="fas fa-bars"></i></button>
 
             <div class="menu right">
-                <ul>
+                <ul class="large-menu">
                     <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
-                    <li><a href="#"><i class="far fa-id-card"></i> About Us</a></li>
-                    <li><a href="#"><i class="fas fa-briefcase"></i> Services</a></li>
-                    <li><a href="#"><i class="far fa-envelope"></i> Contact</a></li>
+                    <li><a href="#about"><i class="far fa-id-card"></i> About Us</a></li>
+                    <li><a href="#clients"><i class="fas fa-briefcase"></i> Services</a></li>
+                    <li><a href="#contact"><i class="far fa-envelope"></i> Contact</a></li>
                     <li><a href="#"><i class="far fa-chart-bar"></i> Dashboard</a></li>
+                </ul>
+            </div>
 
+            <div class="collapse navbar-small" id="navbar-small">
+            	<ul class="small-menu">
+                    <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#about"><i class="far fa-id-card"></i> About Us</a></li>
+                    <li><a href="#clients"><i class="fas fa-briefcase"></i> Services</a></li>
+                    <li><a href="#contact"><i class="far fa-envelope"></i> Contact</a></li>
+                    <li><a href="#"><i class="far fa-chart-bar"></i> Dashboard</a></li>
                 </ul>
             </div>
         </div>
@@ -77,8 +88,8 @@
                 <div class="social">
                 	<ul>
                 		<a href="#" target="_blank"><li><i class="fab fa-facebook-f"></i></li></a>
-                		<a href="#" target="_blank"><li><i class="fas fa-envelope"></i></li></a>
-                		<a href="#" target="_blank"><li><i class="fas fa-phone"></i></li></a>
+                		<a href="mailto:nationalcomputer@gmail.com"><li><i class="fas fa-envelope"></i></li></a>
+                		<a href="tel:+919212420432"><li><i class="fas fa-phone"></i></li></a>
                 	</ul>
                 </div>
             </div>
@@ -86,7 +97,7 @@
     </div>
 
    
-    <div class="aboutus">
+    <div class="aboutus" id="about">
         <h1><font>About</font> Us</h1>
         <hr>
         <p class="cursive">Lorem Ipsum is simply dummy text of the printing.</p>
@@ -103,7 +114,7 @@
     </div>
 
 
-    <div class="our-clients">
+    <div class="our-clients" id="clients">
         <div class="custom-container">
 	        <h1><font>Our</font> Services</h1>
 	        <hr>
@@ -123,7 +134,7 @@
     	</div>
 	</div>
 
-	<div class="contact">
+	<div class="contact" id="contact">
 		 <h1><font>Contact</font> Us</h1>
         <hr>
         <div class="row">

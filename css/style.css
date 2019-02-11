@@ -2,7 +2,7 @@ html, body
 {
 	height: 100%;
 	width: 100%;
-	padding: 0pc;
+	padding: 0px;
 	margin:0px;
 	overflow-x: hidden;
 	scroll-behavior: smooth;
@@ -14,7 +14,6 @@ html, body
 	box-shadow: 0px 2px 10px rgba(0,0,0,0.2);
 	display: table;
 	position: absolute;
-	/*rgba(228, 228, 230, 0.98)*/
 	background:linear-gradient(to right,rgba(228, 228, 230, 0.99),rgba(228, 228, 230, 0.89) );
 	z-index: 99;
 	top: 0px;
@@ -69,6 +68,28 @@ html, body
 .menu ul li a i
 {
 	margin-right: 10px;
+}
+.small-menu
+{
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+	margin-top: 10px;
+}
+.small-menu li a
+{
+	text-decoration: none;
+	color: #5E5E5E;
+}
+.small-menu li
+{
+	padding: 5px;
+	padding-left: 15px;
+	font-size: 15px;
+}
+.small-menu li a i
+{
+	margin-right: 20px;
 }
 .maincont
 {
@@ -223,7 +244,6 @@ html, body
 	text-align: center;
 	min-height: 100%;
 	width: 100%;
-	overflow:hidden;
 }
 .aboutus h1 font, .contact h1 font
 {
@@ -308,6 +328,7 @@ html, body
 	width: 90%;
 	margin-top: 40px;
 	height: 60vh;
+	overflow: auto;
 }
 .grid .grid-item-2
 {
@@ -391,10 +412,58 @@ html, body
 	font-size: 16px;
 	letter-spacing: 2px;
 }
-
-
-
-
+@media only screen and (max-width: 768px) 
+{
+	.left-container
+	{
+		display:none;
+	}
+	.menu .large-menu
+	{
+		display: none;
+	}
+	.navbar-container
+	{
+		padding: 5px 10px 5px 10px;
+	}
+	.right-container h1
+	{
+		font-size: 12vw;
+		margin-top: -20px;
+	}
+	.maincont
+	{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.btn_lg
+	{
+		font-size: 14px;
+		padding-left: 10px;
+		padding-right: 10px;
+		height: auto;
+	}
+	.aboutus, .our-clients, .contact
+	{
+		padding: 20px;
+	}
+	.cursive
+	{
+		font-size: 15px;
+	}
+	.aboutus .row .col-sm-6
+	{
+		height: 100%;
+		font-size: 14px;
+		line-height: 30px;
+		letter-spacing: 1.5px;
+		text-align: left;
+	}
+	.footer
+	{
+		padding: 30px 20px 30px 20px;
+	}
+}
 
 
 
