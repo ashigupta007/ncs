@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+	<meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1, minimum-scale=1">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+    <link rel="stylesheet" type="text/css" href="../css/animate.css">
+	
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Secular+One" rel="stylesheet">
+</head>
+<body>
+    <div class="main-cont">
+        <h1>
+            <span class="logo">C</span>
+            Complain Details
+        </h1>
+
+
+        <div class="row controls">
+            <div class="col-sm-6 btn-grp">
+                Select Range of Days To view Data<br><br>
+                <button class="active">24 hours</button>
+                <button>7 days</button>
+                <button>30 days</button>
+                <button>6 months</button>
+                <button>12 months</button>
+            </div>
+
+            <div class="col-sm-6">
+                Or select Date to Fetch Data<br>
+                <input type="date" name="" class="txt-sml" placeholder="Start Date">
+                <input type="date" name="" class="txt-sml" placeholder="End Date">
+                <button type="submit" class="btn-sml">Fetch</button>
+            </div>
+        </div>
+
+        <div class="cont table-responsive">
+            <input type="text" name="" class="txt-sml" placeholder="Filter Table" id="filter">
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <td>S. No.</td>
+                        <td>Complain Number</td>
+                        <td>Name</td>
+                        <td>Email</td>
+                        <td>Company Name</td>
+                        <td>Contact Number</td>
+                        <td> Complain Details</td>
+                        <td>Atendant</td>
+                        <td>Status</td>
+                    </tr>
+                </thead>
+
+                <tbody id="status">
+                    <tr>
+                        <td>1</td>
+                        <td>112423</td>
+                        <td>Ashish Gupta</td>
+                        <td>love4css@gmail.com</td>
+                        <td>NAtional computer Solutions</td>
+                        <td>8527769723</td>
+                        <td>Boht Saara text text text text text text text text text text text text text </td>
+                        <td>
+                            <select>
+                                <option>Ravinder</option>
+                                <option>shish Pal</option>
+                                <option>Rahul</option>
+                                <option>Deepak</option>
+                                <option>Ajay</option>
+                            </select>
+                        </td>
+
+                        <td>
+                            <button class="complain_status done"><i class="fas fa-check"></i></button>
+                            <!-- <i class="fas fa-exclamation"></i> -->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>112423</td>
+                        <td>Ashish </td>
+                        <td>love4css@gmail.com</td>
+                        <td>NAtional computer Solutions</td>
+                        <td>8527769723</td>
+                        <td>Boht Saara text text text text text text text text text text text text text </td>
+                        <td>
+                            <select>
+                                <option>Ravinder</option>
+                                <option>shish Pal</option>
+                                <option>Rahul</option>
+                                <option>Deepak</option>
+                                <option>Ajay</option>
+                            </select>
+                        </td>
+                        <td>
+                            <button class="complain_status pending"><i class="fas fa-exclamation"></i></button>
+                            <!-- <i class="fas fa-exclamation"></i> -->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>112423</td>
+                        <td>Ashish </td>
+                        <td>love4css@gmail.com</td>
+                        <td>NAtional computer Solutions</td>
+                        <td>8527769723</td>
+                        <td>Boht Saara text text text text text text text text text text text text text </td>
+                        <td>
+                            <select>
+                                <option>Ravinder</option>
+                                <option>shish Pal</option>
+                                <option>Rahul</option>
+                                <option>Deepak</option>
+                                <option>Ajay</option>
+                            </select>
+                        </td>
+
+                        <td>
+                            <button class="complain_status pending"><i class="fas fa-exclamation"></i></button>
+                            <!-- <i class="fas fa-exclamation"></i> -->
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</body>
+
+<script type="text/javascript">
+    $("#filter").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#status tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+
+    $('.complain_status').click(function(){
+        
+        if($(this).children().hasClass('fa-check'))
+        {
+            //AJAX function first
+            $(this).children().removeClass('fa-check');
+            $(this).children().addClass('fa-exclamation');
+            $(this).toggleClass('done');
+            $(this).toggleClass('pending');
+        }
+        else
+        {
+            //AJAX function first
+            $(this).children().removeClass('fa-exclamation');
+            $(this).children().addClass('fa-check');
+            $(this).toggleClass('done');
+            $(this).toggleClass('pending');
+        }
+        
+
+    })
+</script>
+</html>
