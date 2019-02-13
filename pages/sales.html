@@ -28,13 +28,24 @@
 <body>
     <div class="main-cont">
         <h1>
-            <span class="logo">C</span>
-            Complain Details
+            <span class="logo">S</span>
+            Sales Details
         </h1>
-
-
+        
         <div class="row controls">
             <div class="col-sm-6 btn-grp">
+                Select Employee
+                <select style="margin-left: 30px;">
+                    <option>Ravinder</option>
+                    <option>shish Pal</option>
+                    <option>Rahul</option>
+                    <option>Deepak</option>
+                    <option>Ajay</option>
+                </select>
+                
+                <br>
+                <br>
+
                 Select Range of Days To view Data<br><br>
                 <button class="active">24 hours</button>
                 <button>7 days</button>
@@ -58,11 +69,9 @@
                 <td>Total Unsolved Complains :</td><td>0</td>
             </tr>
         </table>
-
-
+    
         <div class="cont table-responsive" style="margin-top: 20px">
             <input type="text" name="" class="txt-sml" placeholder="Filter Table" id="filter" style="margin-top: 0px;">
-            <button type="submit" class="btn-sml" style="float: right">Save & Send Email</button>
             <table class="table">
                 <thead>
                     <tr>
@@ -88,13 +97,7 @@
                         <td>8527769723</td>
                         <td>Boht Saara text text text text text text text text text text text text text </td>
                         <td>
-                            <select>
-                                <option>Ravinder</option>
-                                <option>shish Pal</option>
-                                <option>Rahul</option>
-                                <option>Deepak</option>
-                                <option>Ajay</option>
-                            </select>
+                            Ravinder
                         </td>
 
                         <td>
@@ -111,13 +114,7 @@
                         <td>8527769723</td>
                         <td>Boht Saara text text text text text text text text text text text text text </td>
                         <td>
-                            <select>
-                                <option>Ravinder</option>
-                                <option>shish Pal</option>
-                                <option>Rahul</option>
-                                <option>Deepak</option>
-                                <option>Ajay</option>
-                            </select>
+                            Shavinder
                         </td>
                         <td>
                             <button class="complain_status pending"><i class="fas fa-exclamation"></i></button>
@@ -133,13 +130,7 @@
                         <td>8527769723</td>
                         <td>Boht Saara text text text text text text text text text text text text text </td>
                         <td>
-                            <select>
-                                <option>Ravinder</option>
-                                <option>shish Pal</option>
-                                <option>Rahul</option>
-                                <option>Deepak</option>
-                                <option>Ajay</option>
-                            </select>
+                            Davinder
                         </td>
 
                         <td>
@@ -150,38 +141,8 @@
                 </tbody>
             </table>
         </div>
+
+
     </div>
-
 </body>
-
-<script type="text/javascript">
-    $("#filter").on("keyup", function() {
-    var value = $(this).val().toLowerCase();
-    $("#status tr").filter(function() {
-      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-    });
-  });
-
-    $('.complain_status').click(function(){
-        
-        if($(this).children().hasClass('fa-check'))
-        {
-            //AJAX function first
-            $(this).children().removeClass('fa-check');
-            $(this).children().addClass('fa-exclamation');
-            $(this).toggleClass('done');
-            $(this).toggleClass('pending');
-        }
-        else
-        {
-            //AJAX function first
-            $(this).children().removeClass('fa-exclamation');
-            $(this).children().addClass('fa-check');
-            $(this).toggleClass('done');
-            $(this).toggleClass('pending');
-        }
-        
-
-    })
-</script>
 </html>
